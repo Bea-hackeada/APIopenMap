@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>API Open Map</title>
+</head>
+<body>
+   <main>
+    <div class="container">
+        <div class="box-large">
+            <input type="text" id="cidade" placeholder="Digite a Cidade">
+            <img src="Assets/search.png" alt="pesquisa" id="imgPesquisa" onclick="pesquisarCidade()">
+        </div>
+        <h2 id="nome-cidade">Aracaju</h2>
+        <h2 id="temperatura">29°C</h2>
+        <h2 id="umidade">80%</h2>
+
+        <div class="box-small">
+            <h2 id="previsao">Ensolarado</h2>
+            <img src="Assets/sun.png" alt="img-icon" id="img-icon">
+
+
+        </div>
+
+    </div>
+   </main> 
+</body>
+<script src="main.js"></script>
+</html>
