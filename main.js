@@ -14,7 +14,9 @@ async function dadosAPI(cidade){
 }
 
 function trocarDados(dados){
-    document.getElementById("nome-cidade").innerHTML = "Tempo em:" + dados.name
-    document.getElementById("img-icon").src = `https://openweathermap.org/img/wn/${dados.werather[0].icon}@2x.png`
-
+    document.getElementById("nome-cidade").innerHTML = "Tempo em: " + dados.name
+    document.getElementById("img-icon").src = `https://openweathermap.org/img/wn/${dados.weather[0].icon}@2x.png`
+    document.getElementById("img-icon").style = "display: flex"
+    document.getElementById("temperatura").innerHTML = "Temperatura: " + Math.floor(dados.main.temp) + "°C"
+    document.getElementById("umidade").innerHTML = "Umidade: " + dados.main.humidity + "%"
 }
